@@ -1,0 +1,13 @@
+.fontIcon {
+  margin-top: 6px;
+}
+@media (max-width: 1300px) {
+  .fontIcon {
+    margin-top: 2px;
+  }
+}
+@media (max-width: 500px) {
+  .fontIcon {
+    font-size: 1.5em;
+  }
+}

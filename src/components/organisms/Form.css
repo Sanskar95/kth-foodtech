@@ -1,0 +1,90 @@
+.form-container {
+  border-radius: 0.5em;
+  box-shadow: 0 0 1em 0 rgba(51, 51, 51, 0.25);
+  display: block;
+  width: 400px;
+  overflow: hidden;
+  padding: 10px 20px;
+  position: relative;
+  z-index: 1;
+  height: fit-content;
+}
+
+.registration-form label {
+  border-bottom: 1px solid#33333375;
+  display: block;
+  font-size: 1;
+  margin-bottom: 0.5em;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+.registration-form label.col-one-half {
+  float: left;
+  width: 100%;
+}
+.registration-form label input {
+  background: none;
+  border: none;
+  line-height: 1em;
+  font-weight: 300;
+  padding: 0.125em 0.25em;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+.registration-form label input:focus {
+  outline: none;
+}
+.span-container {
+  display: flex;
+  justify-content: space-between;
+}
+.error-message {
+  color: #ef0d33;
+  font-size: 12px;
+}
+
+.registration-form label span.label-text {
+  display: block;
+  font-size: 12px;
+
+  padding-left: 0.5em;
+  text-transform: uppercase;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1.5px;
+}
+
+.registration-form textarea {
+  resize: none;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  height: 120px;
+  width: 100%;
+}
+.text-center {
+  text-align: center;
+  font-size: 22px;
+  margin: 0 0 25px 0;
+  text-align: center;
+  font-weight: 600;
+}
+.myButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.send-email {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: green;
+}
+@media (max-width: 500px) {
+  .form-container {
+    width: 300px;
+  }
+  .text-center {
+    font-size: 16px;
+  }
+}
