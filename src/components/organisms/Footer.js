@@ -1,6 +1,8 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCopyright } from '@fortawesome/free-solid-svg-icons';
+import { faMapMarked } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+
 import styled from 'styled-components';
 
 const StyledFooterContainer = styled.footer`
@@ -25,7 +27,6 @@ const StyledFooterList = styled.div`
 `;
 
 const StyledTitle = styled.p`
-  text-transform: uppercase;
   font-size: 16px;
   margin: 15px;
 `;
@@ -36,10 +37,16 @@ const Footer = () => {
     <StyledFooterContainer>
       <StyledFooterList>
         <StyledCopywrightIcon>
-          <FontAwesomeIcon icon={faCopyright} size="2x" />
+          <FontAwesomeIcon icon={faEnvelope} size="2x" />
         </StyledCopywrightIcon>
-        <StyledTitle>Copyright 2020, Agata Lipiak</StyledTitle>
+       <StyledTitle><a>info@kthfoodtech.se</a></StyledTitle>
       </StyledFooterList>
+        <StyledFooterList>
+            <StyledCopywrightIcon>
+                <FontAwesomeIcon icon={faMapMarked} size="2x" />
+            </StyledCopywrightIcon>
+            <StyledTitle>Drottning Kristinas väg 15-19, 114 28 Stockholm</StyledTitle>
+        </StyledFooterList>
     </StyledFooterContainer>
   );
 };

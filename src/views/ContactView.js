@@ -6,6 +6,7 @@ import {
   faInstagram,
   faGoogle,
   faGithub,
+    faLinkedin
 } from "@fortawesome/free-brands-svg-icons";
 import { faFileDownload } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -254,7 +255,7 @@ const ContactView = ({ id }) => {
             <StyledList>
               <StyledFacebookIcon>
                 <StyledLink
-                  // href={"https://www.facebook.com/agata.sobstyl"}
+                  href={"https://www.facebook.com/kthfoodtech"}
                   target="_blank"
                   rel="noopener"
                 >
@@ -272,7 +273,7 @@ const ContactView = ({ id }) => {
             <StyledList>
               <StyledInstagramIcon>
                 <StyledLink
-                  // href={"https://www.instagram.com/gunin25/?hl=pl"}
+                  href={"https://www.instagram.com/kthfoodtech/"}
                   target="_blank"
                   rel="noopener"
                 >
@@ -290,22 +291,22 @@ const ContactView = ({ id }) => {
             <StyledList>
               <StyledGoogleIcon>
                 <StyledLink
-                  // href={"mailto:agatalipiak25@gmail.com"}
+                  href={"https://www.linkedin.com/company/kth-foodtech/"}
                   target="_blank"
                   rel="noopener"
                 >
                   <StyledGoogleLogo>
                     <FontAwesomeIcon
-                      icon={faGoogle}
+                      icon={faLinkedin}
                       size="2x"
                       className="fontIcon"
                     />
                   </StyledGoogleLogo>
-                  <StyledTitleGoogle>Gmail</StyledTitleGoogle>
+                  <StyledTitleGoogle>LinkedIn</StyledTitleGoogle>
                 </StyledLink>
               </StyledGoogleIcon>
             </StyledList>
-           
+
           </StyledSocialIcon>
         </StyledContactContainer>
       </StyledWrapper>

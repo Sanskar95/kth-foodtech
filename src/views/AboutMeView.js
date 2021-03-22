@@ -66,6 +66,7 @@ const StyledWrapper = styled.div`
 const StyledContainer = styled.div`
   display: flex;
   width: 100%;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -156,6 +157,8 @@ const StyledPhotoBorder = styled.div`
 const StyledInfo = styled.div`
   width: 50%;
   height: 400px;
+  display: flex;
+  flex-direction: row;
   margin-left: 50px;
   background-color: transparent;
   perspective: 1200px;
@@ -206,17 +209,19 @@ const StyledFrontCard = styled.div`
   position: absolute;
   background-color: ${({ theme }) => theme.secondary};
   display: flex;
+  margin: 4rem;
   flex-direction: column;
   justify-content: space-around;
   color: ${({ theme }) => theme.ternary};
-  width: 100%;
-  height: 100%;
+  width: 30rem;
+  height: 10rem;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   padding: -0 20px;
   text-align: justify;
   align-items: center;
 `;
+
 const StyledBackCard = styled(StyledFrontCard)`
   position: absolute;
   transform: rotateY(180deg);
@@ -325,66 +330,26 @@ const AboutMeView = ({ id, name }) => {
 
   return (
     <StyledWrapper className="aboutMe" id={id} name={name}>
-      <StyledTitle secondary={state}>Hello, my name is Agata.</StyledTitle>
+      <p style={{margin: '2rem'}}>Our mission is to connect KTH students to the amazing and fast paced world of Foodtech as well as inspire them to make greener food choices</p>
       <StyledContainer>
-        <StyledLeftContainer>
-          <StyledPhotoBorder
-            icon={image}
-            data-aos="fade-up"
-          ></StyledPhotoBorder>
-        </StyledLeftContainer>
         <StyledInfo data-aos="fade-up">
           <StyledText props={clickStatus}>
-            <StyledFrontCard>
-              <StyledTextInside>Few words about me</StyledTextInside>
-              I am 27 years old and currently work as a Product Engineer. I live
-              in Wroclaw and since last year I have been intensively learning
-              programming to get a job as a Front-end Developer.
+            {/*<div style={{display:'inline-block'}}>*/}
+
+              <StyledTextInside>Who are we?</StyledTextInside>
+            <div style={{padding: '1rem'}}>
+              Make Foodtech mainstream by educating the students of KTH how Foodtech could be the main driver to save the planet as well as show how exciting food technology is
               <br />
               <br />
-              Programming has become my passion, that's why I put a lot of heart
-              and effort into understanding issues and writing good code. I put
-              emphasis on simplicity, functionality and dynamics.
+              Inspire students to be part of this incredibly fast growing and vibrant industry and match their talents with awesome Foodtech companies
               <br />
               <br />
-              <CardButton type="button" onClick={btnClick} visible={visible}>
-                Flip the card
-              </CardButton>
-            </StyledFrontCard>
-            <StyledBackCard>
-              <StyledPhotoContainer>
-                <StyledPhoto>
-                  <StyledImg src={zdj1} alt="zdj1"></StyledImg>
-                  <StyledImg src={zdj2} alt="zdj2"></StyledImg>
-                  <StyledImg src={zdj3} alt="zdj3"></StyledImg>
-                </StyledPhoto>
-                In my free time I like cooking and watching movies. I'm
-                interested in home brewing and I'm a fan of craft beers. You
-                will often find me in the gym or on the field playing football.
-                In winter I spend time skiing.
-              </StyledPhotoContainer>
-              <CardButton type="button" onClick={returnClick}>
-                Return
-              </CardButton>
-            </StyledBackCard>
+              Showcase how many different amazing plant-based food options we have today by letting the students get first-hand experience in order to make it easier to make greener food choices.
+            </div>
           </StyledText>
+
         </StyledInfo>
       </StyledContainer>
-      <StyledSection data-aos="fade-in">
-        <StyledLink
-          activeClass="active"
-          to="skills"
-          spy={true}
-          smooth={true}
-          duration={1000}
-          isDynamic={true}
-          offset={-70}
-        >
-          <StyledSpan></StyledSpan>
-          <StyledSpan></StyledSpan>
-          <StyledSpan></StyledSpan>My skills
-        </StyledLink>
-      </StyledSection>
     </StyledWrapper>
   );
 };

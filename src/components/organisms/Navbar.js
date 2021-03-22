@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Link, animateScroll as scroll } from 'react-scroll';
+import {  animateScroll as scroll } from 'react-scroll';
+import {Link} from "react-router-dom";
 import styled, { keyframes } from 'styled-components';
 import myLogo from '../../assets/pictures/logo_red.webp';
 import whiteLogo from '../../assets/pictures/myLogo.webp';
@@ -19,7 +20,6 @@ const showNavigation = keyframes`
 `;
 
 const StyledWrapper = styled.div`
-  display: flex;
   justify-content: space-between;
   position: fixed;
   z-index: 20;
@@ -74,7 +74,9 @@ const StyledListItemView = styled.ul`
   }
 `;
 
-const StyledLink = styled(Link)``;
+const StyledLink = styled(Link)`
+text-decoration: none
+`;
 
 const StyledListItem = styled.li`
   list-style: none;
@@ -172,7 +174,7 @@ const Navbar = () => {
           </StyledLink>
         </StyledListItem>
         <StyledListItem>
-          <StyledLink activeClass="active" to="contact" spy={true} smooth={true} duration={1000} isDynamic={true} offset={-70}>
+          <StyledLink activeClass="active" to="/blogs" spy={true} smooth={true} duration={1000} isDynamic={true} offset={-70}>
             More
             <StyledItemBar />
           </StyledLink>
