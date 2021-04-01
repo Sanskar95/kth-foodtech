@@ -45,6 +45,7 @@ export default function BlogPostScreen() {
     const theme = useTheme();
 
     return (
+        <div>
         <Card className={classes.root}>
             <div className={classes.details}>
 
@@ -63,5 +64,25 @@ export default function BlogPostScreen() {
             </div>
             <img  style={{height: '20rem', width: '20rem'}} src={quiz}/>
         </Card>
+            <Card className={classes.root}>
+                <div className={classes.details}>
+
+                    <CardContent className={classes.content}>
+
+                        <Typography style={{fontWeight: 700, fontSize: '30px'}}>
+                            Quiz Night 17th february!
+                        </Typography>
+                        <Typography style={{fontSize: '20px'}}>The evening will provide some fun facts, and a bunch of interesting questions. In addition to that we will also have the amazing Klimato for a visit, and Sweden Foodtech will also provide some interesting questions for the event.
+
+
+
+                            The winners of the quiz will get the chance to go and visit Klimato, meet the Klimato team, have lunch, see the office and get a better understanding of how FoodTech startups work. The quiz night will be held at zoom, where anyones who has an interest in FoodTech and how Foodtech companies works is welcome! Zoom link: https://kth-se.zoom.us/j/61492394897</Typography>
+                    </CardContent>
+
+                </div>
+                <img  style={{height: '20rem', width: '20rem'}} src={quiz}/>
+            </Card>
+        </div>
+
     );
 }
