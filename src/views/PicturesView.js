@@ -166,7 +166,7 @@ const PicturesView = ({ id }) => {
               <StyledContent>
                   <StyledImgContent src={alice} alt="weather" />
                   <StyledTitleContent>Alice</StyledTitleContent>
-                  <StyledTitleContentSmall>Project Manager</StyledTitleContentSmall>
+                  <StyledTitleContentSmall>Corporate Relations</StyledTitleContentSmall>
 
               </StyledContent>
 
