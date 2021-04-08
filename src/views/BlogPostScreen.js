@@ -2,14 +2,16 @@ import React from 'react';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
+
+import Dialog from '@material-ui/core/Dialog';
+
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
-import SkipPreviousIcon from '@material-ui/icons/SkipPrevious';
-import PlayArrowIcon from '@material-ui/icons/PlayArrow';
-import SkipNextIcon from '@material-ui/icons/SkipNext';
-import quiz from '../assets/pictures/quiz_pic.png'
-
+import CloseIcon from '@material-ui/icons/Close';
+import Slide from '@material-ui/core/Slide';
+import data from '../data/posts'
 const useStyles = makeStyles((theme) => ({
     root: {
         display: 'flex',
@@ -40,48 +42,70 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
+const Transition = React.forwardRef(function Transition(props, ref) {
+    return <Slide direction="up" ref={ref} {...props} />;
+});
+
+
 export default function BlogPostScreen() {
     const classes = useStyles();
     const theme = useTheme();
+    const [isModalOpen, setIsModalOpen]= React.useState(false);
+    const [currentTitle, setCurrentTitle] = React.useState('')
+    const [currentContent, setCurrentContent] = React.useState('')
+    const [currentImagePath, setCurrentImagePath] = React.useState('')
+
+
+    const handleClose=()=> {
+        setIsModalOpen(false)
+    }
+
+    const handleClickOpen=(title, content, imagePath)=>{
+        setCurrentContent(content)
+        setCurrentTitle(title)
+        setCurrentImagePath(imagePath)
+        setIsModalOpen(true)
+    }
 
     return (
         <div>
-        <Card className={classes.root}>
-            <div className={classes.details}>
+            {data.map(post=>{
+                return(
+                    <Card  className={classes.root}>
+                        <div className={classes.details}>
 
-                <CardContent className={classes.content}>
+                            <CardContent className={classes.content}  onClick={()=>handleClickOpen(post.title, post.content, post.relativeImagePath)}>
 
-                    <Typography style={{fontWeight: 700, fontSize: '30px'}}>
-                        Quiz Night 17th february!
-                    </Typography>
-                    <Typography style={{fontSize: '20px'}}>The evening will provide some fun facts, and a bunch of interesting questions. In addition to that we will also have the amazing Klimato for a visit, and Sweden Foodtech will also provide some interesting questions for the event.
+                                <Typography style={{fontWeight: 700, fontSize: '30px'}}>
+                                    {post.title}
+                                </Typography>
+                                <Typography style={{fontSize: '20px'}}>{post.content}</Typography>
+                            </CardContent>
 
+                        </div>
+                        <img  style={{height: '20rem', width: '20rem'}} src={post.relativeImagePath}/>
 
+                    </Card>
 
-                        The winners of the quiz will get the chance to go and visit Klimato, meet the Klimato team, have lunch, see the office and get a better understanding of how FoodTech startups work. The quiz night will be held at zoom, where anyones who has an interest in FoodTech and how Foodtech companies works is welcome! Zoom link: https://kth-se.zoom.us/j/61492394897</Typography>
-                </CardContent>
-
-            </div>
-            <img  style={{height: '20rem', width: '20rem'}} src={quiz}/>
-        </Card>
-            <Card className={classes.root}>
-                <div className={classes.details}>
-
-                    <CardContent className={classes.content}>
-
-                        <Typography style={{fontWeight: 700, fontSize: '30px'}}>
-                            Quiz Night 17th february!
+                )
+            })}
+            <Dialog fullScreen open={isModalOpen} onClose={handleClose} TransitionComponent={Transition}>
+                <AppBar className={classes.appBar}>
+                    <Toolbar>
+                        <IconButton edge="start" color="inherit" onClick={handleClose} aria-label="close">
+                            <CloseIcon />
+                        </IconButton>
+                        <Typography variant="h6" className={classes.title}>
+                            {currentTitle}
                         </Typography>
-                        <Typography style={{fontSize: '20px'}}>The evening will provide some fun facts, and a bunch of interesting questions. In addition to that we will also have the amazing Klimato for a visit, and Sweden Foodtech will also provide some interesting questions for the event.
-
-
-
-                            The winners of the quiz will get the chance to go and visit Klimato, meet the Klimato team, have lunch, see the office and get a better understanding of how FoodTech startups work. The quiz night will be held at zoom, where anyones who has an interest in FoodTech and how Foodtech companies works is welcome! Zoom link: https://kth-se.zoom.us/j/61492394897</Typography>
-                    </CardContent>
-
+                    </Toolbar>
+                </AppBar>
+                <div style={{margin: '5rem'}}>
+                    <img  style={{height: '25rem', width: '25rem', margin: 'auto'}} src={currentImagePath}/>
+                    <p style={{ fontSize: '1.5rem'}}>{currentContent}</p>
                 </div>
-                <img  style={{height: '20rem', width: '20rem'}} src={quiz}/>
-            </Card>
+
+            </Dialog>
         </div>
 
     );
