@@ -156,8 +156,8 @@ const PicturesView = ({ id }) => {
       <StyledContainer>
         <StyledCard>
             <StyledContent>
-              <StyledImgContent src={adam} alt="weather" />
-              <StyledTitleContent>Adam</StyledTitleContent>
+              <StyledImgContent src={stella} alt="weather" />
+              <StyledTitleContent>Stella</StyledTitleContent>
                 <StyledTitleContentSmall>Project Manager</StyledTitleContentSmall>
             </StyledContent>
 
