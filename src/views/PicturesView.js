@@ -166,79 +166,16 @@ const PicturesView = ({ id }) => {
               <StyledContent>
                   <StyledImgContent src={alice} alt="weather" />
                   <StyledTitleContent>Alice</StyledTitleContent>
-                  <StyledTitleContentSmall>Corporate Relations</StyledTitleContentSmall>
+                  <StyledTitleContentSmall>Project Manager</StyledTitleContentSmall>
 
               </StyledContent>
 
           </StyledCard>
-          <StyledCard>
-              <StyledContent>
-                  <StyledImgContent src={emma} alt="weather" />
-                  <StyledTitleContent>Emma</StyledTitleContent>
-                  <StyledTitleContentSmall>Corporate Relations</StyledTitleContentSmall>
-              </StyledContent>
-
-          </StyledCard>
+          
 
       </StyledContainer>
-        <StyledContainer>
 
-            <StyledCard>
-                <StyledContent>
-                    <StyledImgContent src={fredrik} alt="weather" />
-                    <StyledTitleContent>Fredrik</StyledTitleContent>
-                    <StyledTitleContentSmall>Corporate Relations</StyledTitleContentSmall>
-                </StyledContent>
-
-            </StyledCard>
-            <StyledCard>
-                <StyledContent>
-                    <StyledImgContent src={hsuchi} alt="weather" />
-                    <StyledTitleContent>Hsu Chi</StyledTitleContent>
-                    <StyledTitleContentSmall>Public Relations</StyledTitleContentSmall>
-
-                </StyledContent>
-
-            </StyledCard>
-            <StyledCard>
-                <StyledContent>
-                    <StyledImgContent src={murtaza} alt="weather" />
-                    <StyledTitleContent>Murtaza</StyledTitleContent>
-                    <StyledTitleContentSmall>Corporate Relations</StyledTitleContentSmall>
-                </StyledContent>
-
-            </StyledCard>
-
-        </StyledContainer>
-        <StyledContainer>
-
-            <StyledCard>
-                <StyledContent>
-                    <StyledImgContent src={sanskar} alt="weather" />
-                    <StyledTitleContent>Sanskar</StyledTitleContent>
-                    <StyledTitleContentSmall>Web Developer</StyledTitleContentSmall>
-                </StyledContent>
-
-            </StyledCard>
-            <StyledCard>
-                <StyledContent>
-                    <StyledImgContent src={stella} alt="weather" />
-                    <StyledTitleContent>Stella</StyledTitleContent>
-                    <StyledTitleContentSmall>Web Developer</StyledTitleContentSmall>
-
-                </StyledContent>
-
-            </StyledCard>
-            <StyledCard>
-                <StyledContent>
-                    <StyledImgContent src={yujing} alt="weather" />
-                    <StyledTitleContent>Yu Jing</StyledTitleContent>
-                    <StyledTitleContentSmall>Corporate Relations</StyledTitleContentSmall>
-                </StyledContent>
-
-            </StyledCard>
-
-        </StyledContainer>
+      
       <Link
         activeClass="active"
         to="contact"
