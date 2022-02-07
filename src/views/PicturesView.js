@@ -6,7 +6,7 @@ import { Link } from "react-scroll";
 import jay from '../assets/pictures/jay.jpg'
 import alice from '../assets/pictures/alice.jpeg'
 import nina from '../assets/pictures/Nina.png'
-import stephanie from '../assets/pictures/Stepahnie.jpg'
+import stephanie from '../assets/pictures/Stephanie.jpg'
 import razzaq from '../assets/pictures/Razzaq.jpg'
 import stella from '../assets/pictures/stella.jpg'
 
@@ -129,7 +129,7 @@ const StyledLinkButton = styled.a`
   color: #333;
   padding: 5px;
   border: 1px solid #333;
-  font-style: 16px;
+  font-style: 16px;k
   :hover {
     background: #333;
     color: #fff;
