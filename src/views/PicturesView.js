@@ -3,15 +3,13 @@ import styled from "styled-components";
 import weather from "../assets/pictures/weather.webp";
 import "aos/dist/aos.css";
 import { Link } from "react-scroll";
-import adam from '../assets/pictures/adam.jpg'
+import jay from '../assets/pictures/jay.jpg'
 import alice from '../assets/pictures/alice.jpeg'
-import fredrik from '../assets/pictures/fredrik.jpg'
-import hsuchi from '../assets/pictures/hsuchi.jpeg'
-import murtaza from '../assets/pictures/murtaza.jpg'
-import sanskar from '../assets/pictures/sanskar.jpeg'
+import nina from '../assets/pictures/Nina.png'
+import stephanie from '../assets/pictures/Stepahnie.jpg'
+import razzaq from '../assets/pictures/Razzaq.jpg'
 import stella from '../assets/pictures/stella.jpg'
-import yujing from '../assets/pictures/yujing.jpg'
-import emma from '../assets/pictures/emma.jpg'
+
 
 
 
@@ -167,6 +165,49 @@ const PicturesView = ({ id }) => {
                   <StyledImgContent src={alice} alt="weather" />
                   <StyledTitleContent>Alice</StyledTitleContent>
                   <StyledTitleContentSmall>Project Manager</StyledTitleContentSmall>
+
+              </StyledContent>
+
+          </StyledCard>
+          
+
+      </StyledContainer>
+      <StyledContainer>
+        <StyledCard>
+            <StyledContent>
+              <StyledImgContent src={stephanie} alt="weather" />
+              <StyledTitleContent>Stephanie</StyledTitleContent>
+                <StyledTitleContentSmall>Corporate Relations</StyledTitleContentSmall>
+            </StyledContent>
+
+        </StyledCard>
+          <StyledCard>
+              <StyledContent>
+                  <StyledImgContent src={nina} alt="weather" />
+                  <StyledTitleContent>Nina</StyledTitleContent>
+                  <StyledTitleContentSmall>Corporate Relations</StyledTitleContentSmall>
+
+              </StyledContent>
+
+          </StyledCard>
+          
+
+      </StyledContainer>
+
+      <StyledContainer>
+        <StyledCard>
+            <StyledContent>
+              <StyledImgContent src={razzaq} alt="weather" />
+              <StyledTitleContent>Razzaq</StyledTitleContent>
+                <StyledTitleContentSmall>Web Developer</StyledTitleContentSmall>
+            </StyledContent>
+
+        </StyledCard>
+          <StyledCard>
+              <StyledContent>
+                  <StyledImgContent src={jay} alt="weather" />
+                  <StyledTitleContent>Jabez</StyledTitleContent>
+                  <StyledTitleContentSmall>Web Developer</StyledTitleContentSmall>
 
               </StyledContent>
 
