@@ -8,7 +8,6 @@ import alice from '../assets/pictures/alice.jpeg'
 import nina from '../assets/pictures/Nina.png'
 import stephanie from '../assets/pictures/Stephanie.jpg'
 import razzaq from '../assets/pictures/Razzaq.jpg'
-import stella from '../assets/pictures/stella.jpg'
 
 
 
@@ -152,14 +151,6 @@ const PicturesView = ({ id }) => {
         </StyledNameTitle>
       </StyledTitle>
       <StyledContainer>
-        <StyledCard>
-            <StyledContent>
-              <StyledImgContent src={stella} alt="weather" />
-              <StyledTitleContent>Stella</StyledTitleContent>
-                <StyledTitleContentSmall>Project Manager</StyledTitleContentSmall>
-            </StyledContent>
-
-        </StyledCard>
           <StyledCard>
               <StyledContent>
                   <StyledImgContent src={alice} alt="weather" />
