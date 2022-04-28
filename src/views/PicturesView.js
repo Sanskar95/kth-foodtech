@@ -147,7 +147,6 @@ const PicturesView = ({ id }) => {
         <StyledNameTitle
           data-aos="flip-left"
           data-aos-easing="ease-out-cubic"
-          data-aos-easing="ease-out-cubic"
           data-aos-duration="2000"
           data-aos-delay="500"
         >
