@@ -85,6 +85,7 @@ const StyledContent = styled.div`
 const StyledImgContent = styled.img`
   max-width: 250px;
   height: 15rem;
+  border-radius: 25px;
 `;
 const StyledTitleContent = styled.h3`
   margin: 10px 0 0;
@@ -146,94 +147,89 @@ const PicturesView = ({ id }) => {
         <StyledNameTitle
           data-aos="flip-left"
           data-aos-easing="ease-out-cubic"
-          data-aos-easing="ease-out-cubic"
           data-aos-duration="2000"
           data-aos-delay="500"
         >
           Meet the Team
         </StyledNameTitle>
       </StyledTitle>
+      
       <StyledContainer>
+          
           <StyledCard>
               <StyledContent>
                   <StyledImgContent src={alice} alt="weather" />
                   <StyledTitleContent>Alice</StyledTitleContent>
                   <StyledTitleContentSmall>Project Manager</StyledTitleContentSmall>
-
               </StyledContent>
-
           </StyledCard>
+
           <StyledCard>
               <StyledContent>
                   <StyledImgContent src={patricia} alt="weather" />
                   <StyledTitleContent>Patricia</StyledTitleContent>
                   <StyledTitleContentSmall>Project Manager</StyledTitleContentSmall>
-
               </StyledContent>
-
           </StyledCard>
           
-
       </StyledContainer>
+
       <StyledContainer>
+        
         <StyledCard>
             <StyledContent>
               <StyledImgContent src={stephanie} alt="weather" />
               <StyledTitleContent>Stephanie</StyledTitleContent>
                 <StyledTitleContentSmall>Corporate Relations</StyledTitleContentSmall>
             </StyledContent>
-
         </StyledCard>
+
           <StyledCard>
               <StyledContent>
                   <StyledImgContent src={nina} alt="weather" />
                   <StyledTitleContent>Nina</StyledTitleContent>
                   <StyledTitleContentSmall>Corporate Relations</StyledTitleContentSmall>
-
               </StyledContent>
-
           </StyledCard>
-          
 
       </StyledContainer>
 
       <StyledContainer>
+
         <StyledCard>
             <StyledContent>
               <StyledImgContent src={nathalie} alt="weather" />
               <StyledTitleContent>Nathalie</StyledTitleContent>
                 <StyledTitleContentSmall>Public Relations</StyledTitleContentSmall>
             </StyledContent>
-
         </StyledCard>
+
           <StyledCard>
               <StyledContent>
                   <StyledImgContent src={joe} alt="weather" />
                   <StyledTitleContent>Joe</StyledTitleContent>
                   <StyledTitleContentSmall>Event Manager</StyledTitleContentSmall>
-
               </StyledContent>
-
           </StyledCard>
+
       </StyledContainer>
 
       <StyledContainer>
+
         <StyledCard>
             <StyledContent>
               <StyledImgContent src={razzaq} alt="weather" />
               <StyledTitleContent>Razzaq</StyledTitleContent>
                 <StyledTitleContentSmall>Web Developer</StyledTitleContentSmall>
             </StyledContent>
-
         </StyledCard>
+
           <StyledCard>
               <StyledContent>
                   <StyledImgContent src={jay} alt="weather" />
                   <StyledTitleContent>Jabez</StyledTitleContent>
                   <StyledTitleContentSmall>Web Developer</StyledTitleContentSmall>
-
               </StyledContent>
-
           </StyledCard>
           
 
