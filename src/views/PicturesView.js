@@ -85,7 +85,6 @@ const StyledContent = styled.div`
 const StyledImgContent = styled.img`
   max-width: 250px;
   height: 15rem;
-  border-radius: 25px;
 `;
 const StyledTitleContent = styled.h3`
   margin: 10px 0 0;
