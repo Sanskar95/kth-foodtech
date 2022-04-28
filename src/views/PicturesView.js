@@ -84,8 +84,8 @@ const StyledContent = styled.div`
 `;
 const StyledImgContent = styled.img`
   max-width: 250px;
-  height: 15rem
-  border-radius: 25px;
+  height: 15rem;
+  border-radius: 25px
 `;
 const StyledTitleContent = styled.h3`
   margin: 10px 0 0;
@@ -146,6 +146,7 @@ const PicturesView = ({ id }) => {
         <StyledFirstBlock data-aos="zoom-in" data-aos-duration="2000" />
         <StyledNameTitle
           data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
           data-aos-easing="ease-out-cubic"
           data-aos-duration="2000"
           data-aos-delay="500"
