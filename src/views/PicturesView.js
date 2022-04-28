@@ -8,6 +8,9 @@ import alice from '../assets/pictures/alice.jpeg'
 import nina from '../assets/pictures/Nina.png'
 import stephanie from '../assets/pictures/Stephanie.jpg'
 import razzaq from '../assets/pictures/Razzaq.jpg'
+import nathalie from '../assets/pictures/Nathalie.jpg'
+import patricia from '../assets/pictures/Patricia.S.jpeg'
+import joe from '../assets/pictures/Joe.png'
 
 
 
@@ -82,6 +85,7 @@ const StyledContent = styled.div`
 const StyledImgContent = styled.img`
   max-width: 250px;
   height: 15rem
+  border-radius: 25px;
 `;
 const StyledTitleContent = styled.h3`
   margin: 10px 0 0;
@@ -160,6 +164,15 @@ const PicturesView = ({ id }) => {
               </StyledContent>
 
           </StyledCard>
+          <StyledCard>
+              <StyledContent>
+                  <StyledImgContent src={patricia} alt="weather" />
+                  <StyledTitleContent>Patricia</StyledTitleContent>
+                  <StyledTitleContentSmall>Project Manager</StyledTitleContentSmall>
+
+              </StyledContent>
+
+          </StyledCard>
           
 
       </StyledContainer>
@@ -183,6 +196,26 @@ const PicturesView = ({ id }) => {
           </StyledCard>
           
 
+      </StyledContainer>
+
+      <StyledContainer>
+        <StyledCard>
+            <StyledContent>
+              <StyledImgContent src={nathalie} alt="weather" />
+              <StyledTitleContent>Nathalie</StyledTitleContent>
+                <StyledTitleContentSmall>Public Relations</StyledTitleContentSmall>
+            </StyledContent>
+
+        </StyledCard>
+          <StyledCard>
+              <StyledContent>
+                  <StyledImgContent src={joe} alt="weather" />
+                  <StyledTitleContent>Joe</StyledTitleContent>
+                  <StyledTitleContentSmall>Event Manager</StyledTitleContentSmall>
+
+              </StyledContent>
+
+          </StyledCard>
       </StyledContainer>
 
       <StyledContainer>
