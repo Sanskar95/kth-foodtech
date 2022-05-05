@@ -8,9 +8,9 @@ import alice from '../assets/pictures/alice.jpeg'
 import nina from '../assets/pictures/Nina.png'
 import stephanie from '../assets/pictures/Stephanie.jpg'
 import razzaq from '../assets/pictures/Razzaq.jpg'
-import nathalie from '../assets/pictures/Nathalie.jpg'
+import nathalie from '../assets/pictures/Nathalie-1.jpg'
 import patricia from '../assets/pictures/Patricia.S.jpeg'
-import joe from '../assets/pictures/Joe.png'
+import joe from '../assets/pictures/Joe-1.png'
 
 
 
