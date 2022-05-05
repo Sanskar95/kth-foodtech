@@ -41,12 +41,12 @@ const StyledFirstBlock = styled.span`
 `;
 
 const StyledNameTitle = styled.h1`
-  font-family: "Poppins";
   color: ${({ theme }) => theme.secondary};
   font-size: 34px;
   margin: 10px;
   opacity: 1;
   font-family: "Lucida Console", "Courier New", monospace;
+  font-weight:bold;
 `;
 const StyledContainer = styled.div`
   width: 100%;
