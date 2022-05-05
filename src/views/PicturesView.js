@@ -45,7 +45,7 @@ const StyledNameTitle = styled.h1`
   font-size: 34px;
   margin: 10px;
   opacity: 1;
-  font-family: "Lucida Console", "Courier New", monospace;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight:bold;
 `;
 const StyledContainer = styled.div`
@@ -86,7 +86,7 @@ const StyledContent = styled.div`
 const StyledImgContent = styled.img`
   max-width: 250px;
   height: 15rem;
-  border-radius: 25px;
+  border-radius: 100%;
   border-style: solid;
   border-color: green;
 `;
@@ -104,7 +104,7 @@ const StyledTitleContentSmall = styled.h3`
   color: #fff;
   text-align: center;
   font-size: .7em;
-  font-family: "Lucida Console", "Courier New", monospace;
+  font-family: Arial, Helvetica, sans-serif;
 `;
 
 const StyledCardFace2 = styled(StyledCardFace1)`
