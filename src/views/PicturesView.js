@@ -8,7 +8,7 @@ import alice from '../assets/pictures/alice.jpeg'
 import nina from '../assets/pictures/Nina.png'
 import stephanie from '../assets/pictures/Stephanie.jpg'
 import razzaq from '../assets/pictures/Razzaq.jpg'
-import nathalie from '../assets/pictures/Nathalie-1.jpg'
+import nathalie from '../assets/pictures/Nathalie-2.jpg'
 import patricia from '../assets/pictures/Patricia.S.jpeg'
 import joe from '../assets/pictures/Joe-1.png'
 
@@ -46,6 +46,7 @@ const StyledNameTitle = styled.h1`
   font-size: 34px;
   margin: 10px;
   opacity: 1;
+  font-family: "Lucida Console", "Courier New", monospace;
 `;
 const StyledContainer = styled.div`
   width: 100%;
@@ -103,6 +104,7 @@ const StyledTitleContentSmall = styled.h3`
   color: #fff;
   text-align: center;
   font-size: .7em;
+  font-family: "Lucida Console", "Courier New", monospace;
 `;
 
 const StyledCardFace2 = styled(StyledCardFace1)`
