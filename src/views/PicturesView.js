@@ -86,7 +86,7 @@ const StyledContent = styled.div`
 const StyledImgContent = styled.img`
   max-width: 250px;
   height: 15rem;
-  border-radius: 100%;
+  border-radius: 25px;
   border-style: solid;
   border-color: green;
 `;
