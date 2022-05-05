@@ -86,6 +86,8 @@ const StyledImgContent = styled.img`
   max-width: 250px;
   height: 15rem;
   border-radius: 25px;
+  border-style: solid;
+  border-color: green;
 `;
 const StyledTitleContent = styled.h3`
   margin: 10px 0 0;
